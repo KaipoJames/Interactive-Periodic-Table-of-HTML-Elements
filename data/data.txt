@@ -1,41 +1,108 @@
-Dt <!DOCTYPE> basic-html Defines-the-document-type
-Hl <html> basic-html Defines-an-HTML-document
-Ttl <title> basic-html Defines-a-title-for-the-document
-By <body> basic-html Defines-the-document's-body
-Hh <h1>-to-<h6> basic-html Defines-different-levels-of-HTML-headings
-P <p> basic-html Defines-a-paragraph-element
-Br <br> basic-html Defines-a-single-line-break
-Hr <hr> basic-html Defines-a-thematic-change-in-the-content
-Cm <!--...-> basic-html Defines-a-comment
-Ar <abbr> formatting Defines-an-acronym-or-abbreviation
+Dt <!DOCTYPE> basic-html Defines the document type
+Hl <html> basic-html Defines an HTML document
+Ttl <title> basic-html Defines a title for the document
+By <body> basic-html Defines the document's body
+Hh <h1>-to-<h6> basic-html Defines different levels of HTML headings
+P <p> basic-html Defines a paragraph element
+Br <br> basic-html Defines a single line break
+Hr <hr> basic-html Defines a thematic change in the content
+Cm <!--...-> basic-html Defines a comment
+Ar <abbr> formatting Defines an acronym or abbreviation
 As <address> formatting Defines contact information for the author/owner of a document/article.
-B <b> formatting Defines-bold-text
-Bi <bdi> formatting Isolates-a-part-of-text-that-might-be-formatted-in-a-different-direction-than-other-text-outside-it
-Bo <bdo> formatting Overrides-the-current-text-direction
-Bq <blockquote> formatting Defines-a-section-that-is-quoted-from-another-source
-Ct <cite> formatting Defines-the-title-of-a-work
-Cd <code> formatting Defines-a-piece-of-computer-code
-De <del> formatting Defines-text-that-has-been-deleted-from-a-document
-Dn <dfn> formatting Represents-the-defining-instance-of-a-term
-Em <em> formatting Defines-emphasized-text
-I <i> formatting Defines-part-of-text-in-an-alternate-voice-or-mood
-Is <ins> formatting Defines-text-that-has-been-inserted-into-a-document
-Kdb <kdb> formatting Defines-keyboard-input
-Mk <mark> formatting Defines-marked/highlighted-text
-Mr <meter> formatting Defines-a-scalar-measurement-within-a-known-range
-Pre <pre> formatting Defines-preformatted-text
-Ps <progress> formatting Represents-the-progress-of-a-task
-Q <q> formatting Defines-a-short-quotation
-Rp <rp> formatting Defines-what-to-show-in-browsers-that-do-not-support-ruby-annotation
-Rt <rt> formatting Defines-an-explanation/pronunciation-of-characters(For-East-Asian-typography)
-Ry <ruby> formatting Defines-a-ruby-annotation(For-East-Asian-typography)
-S <s> formatting Defines-text-that-is-no-longer-correct
-Sp <samp> formatting Defines-sample-output-from-a-computer-program
-Sm <small> formatting Defines-smaller-text
-Sg <strong> formatting Defines-important-text
-Sub <sub> formatting Defines-subscripted-text
-Sup <sup> formatting Defines-superscripted-text
-Tm <time> formatting Defines-a-date/time
-U <u> formatting Defines-text-that-should-be-stylistically-different-from-other-text
-Vr <var> formatting Defines-a-variable
-Wr <wbr> formatting Defines-a-possible-line-break
+B <b> formatting Defines bold text
+Bi <bdi> formatting Isolates a part of text that might be formatted in a different direction than other text outside it
+Bo <bdo> formatting Overrides the current text direction
+Bq <blockquote> formatting Defines a section that is quoted from another source
+Ct <cite> formatting Defines the title of a work
+Cd <code> formatting Defines a piece of computer code
+De <del> formatting Defines text that has been deleted from a document
+Dn <dfn> formatting Represents the defining instance of a term
+Em <em> formatting Defines emphasized text
+I <i> formatting Defines part of text in an alternate voice or mood
+Is <ins> formatting Defines text that has been inserted into a document
+Kdb <kdb> formatting Defines keyboard input
+Mk <mark> formatting Defines marked/highlighted text
+Mr <meter> formatting Defines a scalar measurement within a known range
+Pre <pre> formatting Defines preformatted text
+Ps <progress> formatting Represents the progress of a task
+Q <q> formatting Defines a short quotation
+Rp <rp> formatting Defines what to show in browsers that do not support ruby annotation
+Rt <rt> formatting Defines an explanation/pronunciation of characters(For East Asian typography)
+Ry <ruby> formatting Defines a ruby annotation(For East Asian typography)
+S <s> formatting Defines text that is no longer correct
+Sp <samp> formatting Defines sample output from a computer program
+Sm <small> formatting Defines smaller text
+Sg <strong> formatting Defines important text
+Sub <sub> formatting Defines subscripted text
+Sup <sup> formatting Defines superscripted text
+Tm <time> formatting Defines a date/time
+U <u> formatting Defines text that should be stylistically different from other text
+Vr <var> formatting Defines a variable
+Wr <wbr> formatting Defines a possible line break
+Fm <form> forms-and-input Defines an HTML form for user input
+It <input> forms-and-input Defines an input control
+Ta <textarea> forms-and-input Defines a multi-line input control
+Bn <button> forms-and-input Defines a clickable button
+St <select> forms-and-input Defines a drop-down list
+Op <optgroup> forms-and-input Defines a group of related options in a drop-down list
+On <option> forms-and-input Defines an option in a drop-down list
+Lbl <label> forms-and-input Defines a label for an <input> element
+Fs <fieldset> forms-and-input Groups related elements in a form
+Ld <legend> forms-and-input Defines a caption for a <fieldset> element
+Ds <datalist> forms-and-input Specifies a list of pre-defined options for input controls
+Kn <keygen> forms-and-input Defines a key-pair generator field for forms.
+Ot <output> forms-and-input Defines the result of a calculation
+If <iframe> Frames Defines an inline frame.
+Ig <img> Images Defines an image
+Mp <map> Images Defines a client-side image-map
+Aa <area> Images Defines an area inside an image-map
+Cs <canvas> Images Used to draw graphics, on the fly, via scripting 
+Fgc <figcaption> Images Defines a caption for a <figure> element
+Fg <figure> Images Specifies self-contained content
+Pr <picture> Images Defines a container for multiple image resources
+Ao <audio> audio/video Defines sound content
+Sc <source> audio/video Defines multiple media resources for media elements (<video>, <audio>, and <picture>)
+Tk <track> audio/video Defines text tracks for media elements (<video>, and <audio>)
+Vd <video> audio/video Defines a video or movie
+A <a> links Defines a hyperlink
+Lk <link> links Defines the relationship between a document and an external resource
+Nv <nav> links Defines navigation links
+Ul <ul> lists Defines an unordered list
+Ol <ol> lists Defines an ordered list
+Li <li> lists Defines a list item in a list
+Dl <dl> lists Defines a description list
+Dt <dt> lists Defines a term/name in a description list
+Dd <dd> lists Defines a description of a term/name in a description list
+Mu <menu> lists Defines a list/menu of commands
+Mi <menuitem> lists Defines a command/manu item that the user can invoke from a popup menu
+Tl <table> tables Defines a table
+Cn <caption> tables Defines a table caption
+Th <th> tables Defines a header cell in a table
+Tr <tr> tables Defines a row in a table
+Td <td> tables Defines a cell in a table
+Thd <thead> tables Groups the header content in a table
+Tbd <tbody> tables Groups the body content in a table
+Tf <tfoot> tables Groups the footer content in a table
+Cl <col> tables Specifies column properties for each column within a <colgroup> element
+Cg <colgroup> tables Specifies a group of one or more columns in a table for formatting
+Sl <style> styles-and-semantics Defines style information for a document
+Dv <div> styles-and-semantics Defines a section in a document
+Spn <span> styles-and-semantics Defines a section in a document
+Hdr <header> styles-and-semantics Defines a header for a document or section
+Ft <footer> styles-and-semantics Defines a footer for a document or section
+Mn <main> styles-and-semantics Specifies the main content of a document
+Sn <section> styles-and-semantics Defines a section in a document
+Ae <article> styles-and-semantics Defines an article
+Ad <aside> styles-and-semantics Defines content aside from the page content
+Ds <details> styles-and-semantics Defines additional details that the user can view or hide
+Dg <dialog> styles-and-semantics Defines a dialog box or window
+Sr <summary> styles-and-semantics Defines a visible heading for a <details> element
+Da <data> styles-and-semantics Links the given content with a machine-readable translation
+Hd <head> meta-info Defines information about the document
+Mt <meta> meta-info Defines metadata about an HTML document
+Be <base> meta-info Specifies the base URL/target for all relative URLs in a document
+Spt <script> programming Defines a client-side script
+Nst <noscript> programming Defines n alternate content for users that do not support client-side scripts
+Ed <embed> programming Defines a container for an external(non-HTML) application
+Ot <object> programming Defines an embedded object
+Pm <param> programming Defines a parameter for an object
