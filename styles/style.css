@@ -4,11 +4,12 @@
   box-sizing: border-box;
 }
 body {
-  padding: 2rem;
+  padding: 1rem 0;
+  overflow-x: hidden;
 }
 .header-container,
 .input {
-  height: 15vh;
+  height: 8vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -17,8 +18,18 @@ body {
 .table {
   display: grid;
   grid-template-columns: repeat(17, auto) 1fr;
+  grid-template-areas:
+    "box1    .      .     .     .     .     .     .     .     .     .     .     .     .     .     .     . box102"
+    "box2 box8      .     .     .     .     .     .     .     .     .     . box72 box78 box84 box90 box96 box103"
+    "box3 box9      .     .     .     .     .     .     .     .     .     . box73 box79 box85 box91 box97 box104"
+    "box4 box10 box14 box18 box24 box30 box36 box42 box48 box54 box60 box66 box74 box80 box86 box92 box98 box105"
+    "box5 box11 box15 box19 box25 box31 box37 box43 box49 box55 box61 box67 box75 box81 box87 box93 box99 box106"
+    "box6 box12 box16 box20 box26 box32 box38 box44 box50 box56 box62 box68 box76 box82 box88 box94 box100 box107"
+    "box7 box13 box17 box21 box27 box33 box39 box45 box51 box57 box63 box69 box77 box83 box89 box95 box101 box108"
+    ".        .     . box22 box28 box34 box40 box46 box52 box58 box64 box70     .     .     .     .     .     ."
+    ".        .     . box23 box29 box35 box41 box47 box53 box59 box65 box71     .     .     .     .     .     .";
   width: 90%;
-  margin: 0 auto;
+  margin-left: 2rem;
   max-width: 100%;
 }
 
@@ -47,6 +58,6 @@ body {
   font-size: 10px;
 }
 
-.box102 {
+/* .box102 {
   grid-column-start: -2;
-}
+} */

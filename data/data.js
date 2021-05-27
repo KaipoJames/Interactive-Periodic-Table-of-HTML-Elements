@@ -80,6 +80,9 @@ const startingUI = {
     box.classList = "box" + " box" + count;
     box.style.background = object.color;
 
+    // Assign each box a grid-area name to use in styling it on the grid
+    box.style.gridArea = "box" + count;
+
     const boxTitle = this.createElement("h1", object.title);
     boxTitle.style.fontSize = "18px";
 
