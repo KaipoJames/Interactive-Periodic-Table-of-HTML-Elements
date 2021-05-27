@@ -2,6 +2,7 @@ import { Element } from "./element.js";
 
 // Global Variables
 const table = document.querySelector(".table");
+const input = document.querySelector("#file");
 let count = 1;
 const elementObjects = [];
 
@@ -17,7 +18,6 @@ export const dataReader = {
   },
   // Read in a file containing the data to visualize
   read() {
-    const input = document.querySelector("#file");
     input.addEventListener("change", () => {
       let files = input.files;
       if (files.length === 0) return;
@@ -26,6 +26,8 @@ export const dataReader = {
       const file = files[0];
 
       reader.onload = (e) => {
+        input.remove();
+
         const file = e.target.result;
         const lines = file.split(/\r\n|\n/);
 
@@ -93,7 +95,7 @@ const startingUI = {
     box.appendChild(boxID);
 
     //console.log(object.parent);
-    object.parent.appendChild(box);
-    //table.appendChild(box);
+    //object.parent.appendChild(box);
+    table.appendChild(box);
   },
 };
