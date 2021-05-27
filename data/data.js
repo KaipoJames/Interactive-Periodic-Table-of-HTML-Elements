@@ -71,17 +71,29 @@ const startingUI = {
   },
 
   drawLegend(objects) {
+    const legend = document.querySelector(".legend");
     // One liner to find the unique set of values of a specific object property
     const categories = [...new Set(objects.map((o) => o.category))];
+    const colors = [...new Set(objects.map((o) => o.color))];
     console.log(categories);
 
     for (let i = 0; i < categories.length; i++) {
       let l_Child = document.createElement("div");
       l_Child.classList = "legend-child" + " legend-child" + (i + 1);
 
+      l_Child.style.gridArea = "child" + (i + 1);
+
       let l_ChildBox = document.createElement("div");
+      l_ChildBox.style.background = colors[i];
+
+      let l_ChildLabel = this.createElement("span", categories[i]);
+
+      l_Child.appendChild(l_ChildBox);
+      l_Child.appendChild(l_ChildLabel);
+      legend.appendChild(l_Child);
     }
   },
+
   drawBoxes(objects) {
     for (let i = 0; i < objects.length; i++) {
       this.drawBox(objects[i]);

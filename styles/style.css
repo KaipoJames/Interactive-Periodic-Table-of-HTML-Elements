@@ -31,6 +31,7 @@ body {
   width: 90%;
   margin-left: 2rem;
   max-width: 100%;
+  position: relative;
 }
 
 .box {
@@ -58,6 +59,33 @@ body {
   font-size: 10px;
 }
 
-/* .box102 {
-  grid-column-start: -2;
-} */
+.legend {
+  position: absolute;
+  top: 0rem;
+  left: 15%;
+  width: 50%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.legend-child {
+  display: flex;
+  align-items: center;
+  width: 35%;
+  margin: 0.1rem 0rem;
+}
+.legend-child div {
+  width: 35px;
+  height: 35px;
+}
+.legend-child span {
+  margin-left: 0.5rem;
+  font-weight: bold;
+}
+.legend-child span:hover {
+  cursor: pointer;
+  font-size: larger;
+  opacity: 0.6;
+}
