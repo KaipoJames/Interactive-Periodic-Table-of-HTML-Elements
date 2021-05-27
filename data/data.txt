@@ -52,14 +52,14 @@ Ld <legend> forms-and-input Defines a caption for a <fieldset> element
 Ds <datalist> forms-and-input Specifies a list of pre-defined options for input controls
 Kn <keygen> forms-and-input Defines a key-pair generator field for forms.
 Ot <output> forms-and-input Defines the result of a calculation
-If <iframe> Frames Defines an inline frame.
-Ig <img> Images Defines an image
-Mp <map> Images Defines a client-side image-map
-Aa <area> Images Defines an area inside an image-map
-Cs <canvas> Images Used to draw graphics, on the fly, via scripting 
-Fgc <figcaption> Images Defines a caption for a <figure> element
-Fg <figure> Images Specifies self-contained content
-Pr <picture> Images Defines a container for multiple image resources
+If <iframe> frames Defines an inline frame.
+Ig <img> images Defines an image
+Mp <map> images Defines a client-side image-map
+Aa <area> images Defines an area inside an image-map
+Cs <canvas> images Used to draw graphics, on the fly, via scripting 
+Fgc <figcaption> images Defines a caption for a <figure> element
+Fg <figure> images Specifies self-contained content
+Pr <picture> images Defines a container for multiple image resources
 Ao <audio> audio/video Defines sound content
 Sc <source> audio/video Defines multiple media resources for media elements (<video>, <audio>, and <picture>)
 Tk <track> audio/video Defines text tracks for media elements (<video>, and <audio>)
@@ -102,7 +102,7 @@ Hd <head> meta-info Defines information about the document
 Mt <meta> meta-info Defines metadata about an HTML document
 Be <base> meta-info Specifies the base URL/target for all relative URLs in a document
 Spt <script> programming Defines a client-side script
-Nst <noscript> programming Defines n alternate content for users that do not support client-side scripts
+Nst <noscript> programming Defines alternate content for users that do not support client-side scripts
 Ed <embed> programming Defines a container for an external(non-HTML) application
 Ot <object> programming Defines an embedded object
 Pm <param> programming Defines a parameter for an object
