@@ -45,7 +45,7 @@ export const dataReader = {
         }
 
         // Draw the Table
-        startingUI.drawBoxes(elementObjects);
+        startingUI.init(elementObjects);
       };
 
       reader.onerror = (e) => alert(e.target.error);
@@ -56,6 +56,11 @@ export const dataReader = {
 };
 
 const startingUI = {
+  init(objects) {
+    this.drawBoxes(objects);
+    this.drawLegend(objects);
+  },
+
   // Helper Method to create an html element and assign textContent to it
   createElement(element, content) {
     const el = document.createElement(element);
@@ -64,9 +69,21 @@ const startingUI = {
     }
     return el;
   },
+
+  drawLegend(objects) {
+    // One liner to find the unique set of values of a specific object property
+    const categories = [...new Set(objects.map((o) => o.category))];
+    console.log(categories);
+
+    for (let i = 0; i < categories.length; i++) {
+      let l_Child = document.createElement("div");
+      l_Child.classList = "legend-child" + " legend-child" + (i + 1);
+
+      let l_ChildBox = document.createElement("div");
+    }
+  },
   drawBoxes(objects) {
-    for (let i = 0; i < elementObjects.length; i++) {
-      console.log(objects[i]);
+    for (let i = 0; i < objects.length; i++) {
       this.drawBox(objects[i]);
     }
   },
