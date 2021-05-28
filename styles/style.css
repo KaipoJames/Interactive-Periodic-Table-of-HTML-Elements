@@ -33,8 +33,8 @@ body {
     "box5 box11 box15 box19 box25 box31 box37 box43 box49 box55 box61 box67 box75 box81 box87 box93 box99 box106"
     "box6 box12 box16 box20 box26 box32 box38 box44 box50 box56 box62 box68 box76 box82 box88 box94 box100 box107"
     "box7 box13 box17 box21 box27 box33 box39 box45 box51 box57 box63 box69 box77 box83 box89 box95 box101 box108"
-    ".        .     . box22 box28 box34 box40 box46 box52 box58 box64 box70     .     .     .     .     .     ."
-    ".        .     . box23 box29 box35 box41 box47 box53 box59 box65 box71     .     .     .     .     .     .";
+    "   .     .     . box22 box28 box34 box40 box46 box52 box58 box64 box70     .     .     .     .     .     ."
+    "   .     .     . box23 box29 box35 box41 box47 box53 box59 box65 box71     .     .     .     .     .     .";
   width: 90%;
   margin-left: 2rem;
   max-width: 100%;
@@ -111,9 +111,10 @@ body {
   min-height: 80%;
   background: rgb(174, 174, 174);
   border-radius: 15px;
+  border: 1px solid black;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 900px) {
   .legend {
     display: none;
   }

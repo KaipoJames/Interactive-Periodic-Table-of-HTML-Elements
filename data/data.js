@@ -76,9 +76,8 @@ const StartingUI = {
   drawLegend(objects) {
     const legend = document.querySelector(".legend");
     // One liner to find the unique set of values of a specific object property
-    const categories = [...new Set(objects.map((o) => o.category))];
     const colors = [...new Set(objects.map((o) => o.color))];
-    console.log(categories);
+    const categories = [...new Set(objects.map((o) => o.category))];
 
     for (let i = 0; i < categories.length; i++) {
       let l_Child = document.createElement("div");
@@ -95,6 +94,7 @@ const StartingUI = {
       l_Child.appendChild(l_ChildLabel);
       legend.appendChild(l_Child);
     }
+    Handler.addLegendListeners(objects);
   },
 
   drawBoxes(objects) {
@@ -109,7 +109,7 @@ const StartingUI = {
     // boxID : The ID of the current P-HTML Element
 
     const box = this.createElement("div");
-    box.classList = "box" + " box" + count;
+    box.classList = "box" + " box" + count + " " + object.category;
     box.style.background = object.color;
 
     // Assign each box a grid-area name to use in styling it on the grid
@@ -145,7 +145,6 @@ const Handler = {
       });
     }
   },
-
   displayNewElement(body, object, count) {
     table.style.opacity = 0.3;
 
@@ -190,5 +189,27 @@ const Handler = {
     newElement.appendChild(deleteBtn);
 
     body.appendChild(newElement);
+  },
+  addLegendListeners(objects) {
+    const legendChildren = document.querySelectorAll(".legend-child");
+    const boxes = document.querySelectorAll(".box");
+    for (let i = 0; i < legendChildren.length; i++) {
+      legendChildren[i].addEventListener("mouseenter", () => {
+        const category = legendChildren[i].childNodes[1].innerText;
+        const highlightedElements = document.querySelectorAll("." + category);
+
+        for (var box of boxes) {
+          box.style.opacity = 0.3;
+        }
+        for (var el of highlightedElements) {
+          el.style.opacity = 1;
+        }
+      });
+      legendChildren[i].addEventListener("mouseleave", () => {
+        for (var box of boxes) {
+          box.style.opacity = 1;
+        }
+      });
+    }
   },
 };
