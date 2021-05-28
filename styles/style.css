@@ -5,6 +5,10 @@
 }
 body {
   padding: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .header-container,
 .input {
@@ -79,6 +83,10 @@ body {
   min-width: 35%;
   margin: 0.1rem 0rem;
 }
+.legend-child,
+.box {
+  border-radius: 2px;
+}
 .legend-child div {
   min-width: 35px;
   min-height: 35px;
@@ -91,6 +99,18 @@ body {
   cursor: pointer;
   font-size: larger;
   opacity: 0.6;
+}
+
+.newBox {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-width: 80%;
+  min-height: 80%;
+  background: rgb(174, 174, 174);
+  border-radius: 15px;
 }
 
 @media screen and (max-width: 1150px) {

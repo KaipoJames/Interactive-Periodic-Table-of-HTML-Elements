@@ -1,4 +1,4 @@
-Dt <!DOCTYPE> basic-html Defines the document type
+Dt <!DOCTYPE> basic-html Defines the document type. This tag shows that HTML5 is being run. This HTML Tag does not have a closing tag.
 Hl <html> basic-html Defines an HTML document
 Ttl <title> basic-html Defines a title for the document
 By <body> basic-html Defines the document's body

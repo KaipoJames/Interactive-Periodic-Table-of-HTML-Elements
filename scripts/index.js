@@ -1,3 +1,3 @@
-import { dataReader } from "../data/data.js";
+import { DataReader } from "../data/data.js";
 
-dataReader.init();
+DataReader.init();

@@ -6,7 +6,7 @@ const input = document.querySelector("#file");
 let count = 1;
 const elementObjects = [];
 
-export const dataReader = {
+export const DataReader = {
   // Initialize The dataReader Object
   init() {
     this.read();
@@ -45,7 +45,10 @@ export const dataReader = {
         }
 
         // Draw the Table
-        startingUI.init(elementObjects);
+        StartingUI.init(elementObjects);
+
+        // Add Event Listeners
+        Handler.addListeners(elementObjects);
       };
 
       reader.onerror = (e) => alert(e.target.error);
@@ -55,7 +58,7 @@ export const dataReader = {
   },
 };
 
-const startingUI = {
+const StartingUI = {
   init(objects) {
     this.drawBoxes(objects);
     this.drawLegend(objects);
@@ -129,5 +132,63 @@ const startingUI = {
     //console.log(object.parent);
     //object.parent.appendChild(box);
     table.appendChild(box);
+  },
+};
+
+const Handler = {
+  addListeners(objects) {
+    const boxes = document.querySelectorAll(".box");
+    const body = document.body;
+    for (let i = 0; i < boxes.length; i++) {
+      boxes[i].addEventListener("click", () => {
+        this.displayNewElement(body, objects[i], i);
+      });
+    }
+  },
+
+  displayNewElement(body, object, count) {
+    table.style.opacity = 0.3;
+
+    const newElement = document.createElement("div");
+    newElement.classList = "newBox" + " newBox" + (count + 1);
+    newElement.style.background = object.color;
+    newElement.style.marginBottom = "6rem";
+
+    const title = StartingUI.createElement("h1", object.title);
+    const tagName = StartingUI.createElement("span", object.tagName);
+    const description = StartingUI.createElement("p", object.description);
+    const deleteBtn = document.createElement("img");
+
+    title.style.fontSize = "5rem";
+    tagName.style.fontSize = "3rem";
+    description.style.fontSize = "1.5rem";
+    description.style.width = "75%";
+    description.style.textAlign = "center";
+
+    deleteBtn.src = "../images/delete.png";
+    deleteBtn.style.width = "25px";
+    deleteBtn.style.height = "25px";
+    deleteBtn.style.cursor = "pointer";
+
+    deleteBtn.addEventListener("mouseenter", () => {
+      deleteBtn.style.height = "28px";
+      deleteBtn.style.width = "28px";
+    });
+    deleteBtn.addEventListener("mouseleave", () => {
+      deleteBtn.style.height = "25px";
+      deleteBtn.style.width = "25px";
+    });
+
+    deleteBtn.addEventListener("click", () => {
+      table.style.opacity = 1;
+      newElement.remove();
+    });
+
+    newElement.appendChild(title);
+    newElement.appendChild(tagName);
+    newElement.appendChild(description);
+    newElement.appendChild(deleteBtn);
+
+    body.appendChild(newElement);
   },
 };
