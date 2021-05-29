@@ -24,9 +24,9 @@ export class Element {
     } else if (this.category === "images") {
       this.color = "#64B5F5";
       container = document.querySelector(".images");
-    } else if (this.category === "audio/video") {
+    } else if (this.category === "audio-and-video") {
       this.color = "#BBDFFA";
-      container = document.querySelector(".audio-video");
+      container = document.querySelector(".audio-and-video");
     } else if (this.category === "links") {
       this.color = "#8394C9";
       container = document.querySelector(".links");

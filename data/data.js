@@ -94,7 +94,7 @@ const StartingUI = {
       l_Child.appendChild(l_ChildLabel);
       legend.appendChild(l_Child);
     }
-    Handler.addLegendListeners(objects);
+    Handler.addLegendListeners(legend, objects);
   },
 
   drawBoxes(objects) {
@@ -190,26 +190,42 @@ const Handler = {
 
     body.appendChild(newElement);
   },
-  addLegendListeners(objects) {
+  addLegendListeners(legend, objects) {
+    let inLegend = false;
+
+    legend.addEventListener("mouseenter", () => {
+      inLegend = true;
+      console.log("In Legend: " + inLegend);
+    });
+    legend.addEventListener("mouseleave", () => {
+      inLegend = false;
+      console.log("In Legend: " + inLegend);
+    });
     const legendChildren = document.querySelectorAll(".legend-child");
     const boxes = document.querySelectorAll(".box");
     for (let i = 0; i < legendChildren.length; i++) {
       legendChildren[i].addEventListener("mouseenter", () => {
-        const category = legendChildren[i].childNodes[1].innerText;
-        const highlightedElements = document.querySelectorAll("." + category);
+        if (inLegend === true) {
+          legendChildren[i].style.cursor = "pointer";
+          const category = legendChildren[i].childNodes[1].innerText;
+          const highlightedElements = document.querySelectorAll("." + category);
 
-        for (var box of boxes) {
-          box.style.opacity = 0.3;
-        }
-        for (var el of highlightedElements) {
-          el.style.opacity = 1;
-        }
-      });
-      legendChildren[i].addEventListener("mouseleave", () => {
-        for (var box of boxes) {
-          box.style.opacity = 1;
+          for (var box of boxes) {
+            box.style.opacity = 0.3;
+          }
+          for (var el of highlightedElements) {
+            el.style.opacity = 1;
+          }
         }
       });
+      if (inLegend != true) {
+        console.log(inLegend);
+        legendChildren[i].addEventListener("mouseleave", () => {
+          for (var box of boxes) {
+            box.style.opacity = 1;
+          }
+        });
+      }
     }
   },
 };

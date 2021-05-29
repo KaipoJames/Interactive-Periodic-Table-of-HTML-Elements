@@ -60,10 +60,10 @@ Cs <canvas> images Used to draw graphics, on the fly, via scripting
 Fgc <figcaption> images Defines a caption for a <figure> element
 Fg <figure> images Specifies self-contained content
 Pr <picture> images Defines a container for multiple image resources
-Ao <audio> audio/video Defines sound content
-Sc <source> audio/video Defines multiple media resources for media elements (<video>, <audio>, and <picture>)
-Tk <track> audio/video Defines text tracks for media elements (<video>, and <audio>)
-Vd <video> audio/video Defines a video or movie
+Ao <audio> audio-and-video Defines sound content
+Sc <source> audio-and-video Defines multiple media resources for media elements (<video>, <audio>, and <picture>)
+Tk <track> audio-and-video Defines text tracks for media elements (<video>, and <audio>)
+Vd <video> audio-and-video Defines a video or movie
 A <a> links Defines a hyperlink
 Lk <link> links Defines the relationship between a document and an external resource
 Nv <nav> links Defines navigation links

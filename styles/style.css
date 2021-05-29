@@ -80,8 +80,11 @@ body {
 .legend-child {
   display: flex;
   align-items: center;
-  min-width: 35%;
-  margin: 0.1rem 0rem;
+  max-width: 200px;
+}
+.legend-child:hover {
+  background: rgb(232, 232, 232);
+  border-radius: 20px;
 }
 .legend-child,
 .box {
@@ -97,7 +100,6 @@ body {
 }
 .legend-child span:hover {
   cursor: pointer;
-  font-size: larger;
   opacity: 0.6;
 }
 
