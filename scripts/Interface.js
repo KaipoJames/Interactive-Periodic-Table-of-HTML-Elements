@@ -73,8 +73,6 @@ export const StartingUI = {
     box.appendChild(boxTagName);
     box.appendChild(boxID);
 
-    //console.log(object.parent);
-    //object.parent.appendChild(box);
     const table = document.querySelector(".table");
     table.appendChild(box);
   },
