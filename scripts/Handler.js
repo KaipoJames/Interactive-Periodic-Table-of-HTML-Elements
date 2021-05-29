@@ -5,6 +5,9 @@ export const Handler = {
     const boxes = document.querySelectorAll(".box");
     const body = document.body;
     for (let i = 0; i < boxes.length; i++) {
+      boxes[i].addEventListener("dblclick", () => {
+        console.log("You just double cliked " + boxes[i].classList[1]);
+      });
       boxes[i].addEventListener("click", () => {
         this.displayNewElement(body, objects[i], i);
       });

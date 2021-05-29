@@ -27,6 +27,8 @@ export const DataReader = {
       const file = files[0];
 
       reader.onload = (e) => {
+        const downloadContainer = document.querySelector(".download-container");
+        downloadContainer.remove();
         input.remove();
 
         const file = e.target.result;
