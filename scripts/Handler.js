@@ -4,13 +4,24 @@ export const Handler = {
   addListeners(objects) {
     const boxes = document.querySelectorAll(".box");
     const body = document.body;
+    let clickCount = 0;
     for (let i = 0; i < boxes.length; i++) {
-      boxes[i].addEventListener("dblclick", () => {
-        console.log("You just double cliked " + boxes[i].classList[1]);
-      });
-      boxes[i].addEventListener("click", () => {
-        this.displayNewElement(body, objects[i], i);
-      });
+      boxes[i].addEventListener(
+        "click",
+        () => {
+          clickCount++;
+          if (clickCount === 1) {
+            setTimeout(() => {
+              clickCount = 0;
+              this.displayNewElement(body, objects[i], i);
+            }, 400);
+          } else if (clickCount === 2) {
+            clickCount = 0;
+            console.log("You clicked on " + boxes[i].classList[1]);
+          }
+        },
+        false
+      );
     }
   },
   displayNewElement(body, object, count) {
