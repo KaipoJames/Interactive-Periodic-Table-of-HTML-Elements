@@ -123,9 +123,13 @@ body {
   justify-content: space-evenly;
   min-width: 50%;
   min-height: 80%;
-  background: rgb(174, 174, 174);
+  /* background: rgb(174, 174, 174); */
   border-radius: 15px;
   border: 1px solid black;
+}
+.newBox p {
+  font-size: 0.5rem;
+  max-width: 30rem;
 }
 
 @media screen and (max-width: 900px) {

@@ -1,44 +1,44 @@
 Dt <!DOCTYPE> basic-html Defines the document type. This tag shows that HTML5 is being run. This HTML Tag does not have a closing tag.
-Hl <html> basic-html Defines an HTML document
-Ttl <title> basic-html Defines a title for the document
-By <body> basic-html Defines the document's body
-Hh <h1>-to-<h6> basic-html Defines different levels of HTML headings
-P <p> basic-html Defines a paragraph element
-Br <br> basic-html Defines a single line break
-Hr <hr> basic-html Defines a thematic change in the content
-Cm <!--...-> basic-html Defines a comment
-Ar <abbr> formatting Defines an acronym or abbreviation
-As <address> formatting Defines contact information for the author/owner of a document/article.
-B <b> formatting Defines bold text
-Bi <bdi> formatting Isolates a part of text that might be formatted in a different direction than other text outside it
-Bo <bdo> formatting Overrides the current text direction
-Bq <blockquote> formatting Defines a section that is quoted from another source
-Ct <cite> formatting Defines the title of a work
-Cd <code> formatting Defines a piece of computer code
-De <del> formatting Defines text that has been deleted from a document
-Dn <dfn> formatting Represents the defining instance of a term
-Em <em> formatting Defines emphasized text
-I <i> formatting Defines part of text in an alternate voice or mood
-Is <ins> formatting Defines text that has been inserted into a document
-Kdb <kdb> formatting Defines keyboard input
-Mk <mark> formatting Defines marked/highlighted text
-Mr <meter> formatting Defines a scalar measurement within a known range
-Pre <pre> formatting Defines preformatted text
-Ps <progress> formatting Represents the progress of a task
-Q <q> formatting Defines a short quotation
-Rp <rp> formatting Defines what to show in browsers that do not support ruby annotation
-Rt <rt> formatting Defines an explanation/pronunciation of characters(For East Asian typography)
-Ry <ruby> formatting Defines a ruby annotation(For East Asian typography)
-S <s> formatting Defines text that is no longer correct
-Sp <samp> formatting Defines sample output from a computer program
-Sm <small> formatting Defines smaller text
-Sg <strong> formatting Defines important text
-Sub <sub> formatting Defines subscripted text
-Sup <sup> formatting Defines superscripted text
-Tm <time> formatting Defines a date/time
-U <u> formatting Defines text that should be stylistically different from other text
-Vr <var> formatting Defines a variable
-Wr <wbr> formatting Defines a possible line break
+Hl <html> basic-html Defines an HTML document. The <html> tag represents the root of an HTML document. The <html> tag is the container for all other HTML elements.
+Ttl <title> basic-html Defines a title for the document. A title tag is an HTML element that specifies the title of a web page. Title tags are displayed on search engine results pages (SERPs) as the clickable headline for a given result, and are important for usability, SEO, and social sharing.
+By <body> basic-html The <body> tag defines the document's body. The <body> element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+Hh <h1>-to-<h6> basic-html The <h1> to <h6> tags are used to define HTML headings. <h1> defines the most important heading. <h6> defines the least important headings. A good practice is to only use one <h1> tag per page.
+P <p> basic-html Defines a paragraph element. Browsers automatically add a single blank line before and after each <p> element.
+Br <br> basic-html The HTML <br> tag is used for creating the 'br' element, which represents a line break in an HTML document. The <br> element is classified as a "void element" as it has no content. This also means that no end tag is required
+Hr <hr> basic-html The <hr> tag defines a thematic break in an HTML page (e.g. a shift of topic). The <hr> element is most often displayed as a horizontal rule that is used to separate content (or define a change) in an HTML page.
+Cm <!--...-> basic-html To comment out in HTML, insert information between <! -- and --> tags (browsers won't show these notes). Commenting in HTML allows developers to leave notes about their code, its functionality or to indicate necessary changes for the future.
+Ar <abbr> formatting The Abbreviation element, <abbr> represents an abbreviation or acronym; the optional title attribute can provide an expansion or description for the abbreviation. If present, title must contain this full description and nothing else.
+As <address> formatting The <address> tag defines the contact information for the author/owner of a document or an article. The contact information can be an email address, URL, physical address, phone number, social media handle, etc.
+B <b> formatting The <b> tag is used to indicate the importance of the text. The text is written within <b> tag display in bold size. The <b> tag works similar to the <strong> tag.
+Bi <bdi> formatting The Bi-directional Isolate element ( <bdi> ) tells the browser's bidirectional algorithm to treat the text it contains in isolation from its surrounding text. It's particularly useful when a website dynamically inserts some text and doesn't know the directionality of the text being inserted.
+Bo <bdo> formatting BDO stands for Bi-Directional Override. The <bdo> tag is used to override the current text direction.
+Bq <blockquote> formatting The <blockquote> Element (or HTML Block Quotation Element) indicates that the enclosed text is an extended quotation. ... A URL for the source of the quotation may be given using the cite attribute
+Ct <cite> formatting The <cite> tag defines the title of a creative work such as a movie, book, literature, sculpture, painting or drawing.
+Cd <code> formatting The <code> tag is used to define a piece of computer code. The content inside is displayed in the browser's default monospace font.
+De <del> formatting The <del> tag in HTML stands for delete and is used to mark a portion of text which has been deleted from the document. The deleted text is rendered as strike-through text by the web browsers but can be changed with CSS.
+Dn <dfn> formatting The <dfn> tag is used to mark a term that is being defined in the document. The definition for the term must be found within the parent of the <dfn> tag. Browsers traditionally render the text found within the <dfn> tag as italicized text.
+Em <em> formatting The <em> tag marks text that has stress emphasis which traditionally means that the text is displayed in italics by the browser. This tag is also commonly referred to as the <em> element.
+I <i> formatting The <i> tag merely gives text an italicized appearance but does not provide any semantic meaning to the text. This tag is also commonly referred to as the <i> element.
+Is <ins> formatting The <ins> tag is used to markup new text that has been inserted into a document to show the history of changes to a document. Browsers traditionally render the text found within the <ins> tag as underlined text. You can use the companion tag called the <del> tag to markup text that has been deleted from a document but retained to show the history of changes to a document.
+Kbd <kbd> formatting The <kbd> tag defines text as user input from a keyboard such as the Enter or Ctrl keys. Browsers traditionally render the text found within the <kbd> tag in the default monospace font. This tag is also commonly referred to as the <kbd> element.
+Mk <mark> formatting The <mark> tag is used to mark or highlight text that is of special interest or relevance in an HTML document. Browsers traditionally render the text found within the <mark> tag as text with a yellow background color. This tag is also commonly referred to as the <mark> element.
+Mr <meter> formatting The <meter> tag represents either a scalar value within a known range or a fractional value. Works similar to the <progress>> tag.
+Pre <pre> formatting The <pre> tag defines preformatted text preserving both whitespace and line breaks in the HTML document. This tag is also commonly referred to as the <pre> element.
+Ps <progress> formatting The <progress> element displays an indicator showing the completion progress of a task, typically displayed as a progress bar. Works similar to the <meter> tag.
+Q <q> formatting The <q> element indicates that the enclosed text is a short inline quotation. Most modern browsers implement this by surrounding the text in quotation marks. This element is intended for short quotations that don't require paragraph breaks; for long quotations use the <blockquote> element.
+Rp <rp> formatting The Ruby Fallback Parenthesis (<rp>) element is used to provide fall-back parentheses for browsers that do not support display of ruby annotations using the <ruby> element. One <rp> element should enclose each of the opening and closing parentheses that wrap the <rt> element that contains the annotation's text.
+Rt <rt> formatting The Ruby Text (<rt>) element specifies the ruby text component of a ruby annotation, which is used to provide pronunciation, translation, or transliteration information for East Asian typography. The <rt> element must always be contained within a <ruby> element.
+Ry <ruby> formatting The <ruby> element represents small annotations that are rendered above, below, or next to base text, usually used for showing the pronunciation of East Asian characters. It can also be used for annotating other kinds of text, but this usage is less common.
+S <s> formatting The <s> element renders text with a strikethrough, or a line through it. Use the <s> element to represent things that are no longer relevant or no longer accurate. However, <s> is not appropriate when indicating document edits; for that, use the <del> and <ins> elements, as appropriate.
+Sp <samp> formatting The Sample Element (<samp>) is used to enclose inline text which represents sample (or quoted) output from a computer program. Its contents are typically rendered using the browser's default monospaced font (such as Courier or Lucida Console).
+Sm <small> formatting The <small> element represents side-comments and small print, like copyright and legal text, independent of its styled presentation. By default, it renders text within it one font-size smaller, such as from small to x-small.
+Sg <strong> formatting The Strong Importance Element (<strong>) indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type.
+Sub <sub> formatting The Subscript element (<sub>) specifies inline text which should be displayed as subscript for solely typographical reasons. Subscripts are typically rendered with a lowered baseline using smaller text.
+Sup <sup> formatting The Superscript element (<sup>) specifies inline text which is to be displayed as superscript for solely typographical reasons. Superscripts are usually rendered with a raised baseline using smaller text.
+Tm <time> formatting The <time> element represents a specific period in time. It may include the datetime attribute to translate dates into machine-readable format, allowing for better search engine results or custom features such as reminders.
+U <u> formatting The Unarticulated Annotation element (<u>) represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation. This is rendered by default as a simple solid underline, but may be altered using CSS.
+Vr <var> formatting The Variable element (<var>) represents the name of a variable in a mathematical expression or a programming context. It's typically presented using an italicized version of the current typeface, although that behavior is browser-dependent.
+Wr <wbr> formatting The <wbr> element represents a word break opportunity—a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location.
 Fm <form> forms-and-input Defines an HTML form for user input
 It <input> forms-and-input Defines an input control
 Ta <textarea> forms-and-input Defines a multi-line input control
