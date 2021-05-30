@@ -14,7 +14,7 @@ export const Handler = {
             setTimeout(() => {
               clickCount = 0;
               this.displayNewElement(body, objects[i], i);
-            }, 400);
+            }, 200);
           } else if (clickCount === 2) {
             clickCount = 0;
             console.log("You clicked on " + boxes[i].classList[1]);
