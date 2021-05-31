@@ -4,7 +4,7 @@ Ttl <title> basic-html Defines a title for the document. A title tag is an HTML 
 By <body> basic-html The <body> tag defines the document's body. The <body> element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
 Hh <h1>-to-<h6> basic-html The <h1> to <h6> tags are used to define HTML headings. <h1> defines the most important heading. <h6> defines the least important headings. A good practice is to only use one <h1> tag per page.
 P <p> basic-html Defines a paragraph element. Browsers automatically add a single blank line before and after each <p> element.
-Br <br> basic-html The HTML <br> tag is used for creating the 'br' element, which represents a line break in an HTML document. The <br> element is classified as a "void element" as it has no content. This also means that no end tag is required
+Br <br> basic-html The <br> tag is used for creating the 'br' element, which represents a line break in an HTML document. The <br> element is classified as a "void element" as it has no content. This also means that no end tag is required
 Hr <hr> basic-html The <hr> tag defines a thematic break in an HTML page (e.g. a shift of topic). The <hr> element is most often displayed as a horizontal rule that is used to separate content (or define a change) in an HTML page.
 Cm <!--...-> basic-html To comment out in HTML, insert information between <! -- and --> tags (browsers won't show these notes). Commenting in HTML allows developers to leave notes about their code, its functionality or to indicate necessary changes for the future.
 Ar <abbr> formatting The Abbreviation element, <abbr> represents an abbreviation or acronym; the optional title attribute can provide an expansion or description for the abbreviation. If present, title must contain this full description and nothing else.
@@ -85,24 +85,24 @@ Tbd <tbody> tables The Table Body element (<tbody>) encapsulates a set of table 
 Tf <tfoot> tables The <tfoot> element defines a set of rows summarizing the columns of the table.
 Cl <col> tables The <col> element defines a column within a table and is used for defining common semantics on all common cells. It is generally found within a <colgroup> element.
 Cg <colgroup> tables The <colgroup> element defines a group of columns within a table.
-Sl <style> styles-and-semantics Defines style information for a document
-Dv <div> styles-and-semantics Defines a section in a document
-Spn <span> styles-and-semantics Defines a section in a document
-Hdr <header> styles-and-semantics Defines a header for a document or section
-Ft <footer> styles-and-semantics Defines a footer for a document or section
-Mn <main> styles-and-semantics Specifies the main content of a document
-Sn <section> styles-and-semantics Defines a section in a document
-Ae <article> styles-and-semantics Defines an article
-Ad <aside> styles-and-semantics Defines content aside from the page content
-Ds <details> styles-and-semantics Defines additional details that the user can view or hide
-Dg <dialog> styles-and-semantics Defines a dialog box or window
-Sr <summary> styles-and-semantics Defines a visible heading for a <details> element
-Da <data> styles-and-semantics Links the given content with a machine-readable translation
-Hd <head> meta-info Defines information about the document
-Mt <meta> meta-info Defines metadata about an HTML document
-Be <base> meta-info Specifies the base URL/target for all relative URLs in a document
-Spt <script> programming Defines a client-side script
-Nst <noscript> programming Defines alternate content for users that do not support client-side scripts
-Ed <embed> programming Defines a container for an external(non-HTML) application
-Ot <object> programming Defines an embedded object
-Pm <param> programming Defines a parameter for an object
+Sl <style> styles-and-semantics The <style> element contains style information for a document, or part of a document. It contains CSS, which is applied to the contents of the document containing the <style> element.
+Dv <div> styles-and-semantics The Content Division element (<div>) is the generic container for flow content. It has no effect on the content or layout until styled in some way using CSS.
+Spn <span> styles-and-semantics The <span> element is a generic inline container for phrasing content, which does not inherently represent anything. It can be used to group elements for styling purposes (using the class or id attributes), or because they share attribute values, such as lang. It should be used only when no other semantic element is appropriate.
+Hdr <header> styles-and-semantics The <header> element represents introductory content, typically a group of introductory or navigational aids. It may contain some heading elements but also a logo, a search form, an author name, and other elements.
+Ft <footer> styles-and-semantics The <footer> element represents a footer for its nearest sectioning content or sectioning root element. A <footer> typically contains information about the author of the section, copyright data or links to related documents.
+Mn <main> styles-and-semantics The <main> element represents the dominant content of the <body> of a document. The main content area consists of content that is directly related to or expands upon the central topic of a document, or the central functionality of an application.
+Sn <section> styles-and-semantics The <section> element represents a generic standalone section of a document, which doesn't have a more specific semantic element to represent it. Sections should always have a heading, with very few exceptions.
+Ae <article> styles-and-semantics The <article> element represents a self-contained composition in a document, page, application, or site, which is intended to be independently distributable or reusable (e.g., in syndication). Examples include: a forum post, a magazine or newspaper article, blog entry, etc.
+Ad <aside> styles-and-semantics The <aside> element represents a portion of a document whose content is only indirectly related to the document's main content. Asides are frequently presented as sidebars or call-out boxes.
+Ds <details> styles-and-semantics The Details Element (<details>) creates a disclosure widget in which information is visible only when the widget is toggled into an "open" state. A summary or label must be provided using the <summary> element. The user can 'view' or 'hide' the information.
+Dg <dialog> styles-and-semantics The <dialog> element represents a dialog box or other interactive component, such as a dismissible alert, inspector, or subwindow.
+Sr <summary> styles-and-semantics The Disclosure Summary element (<summary>) element specifies a summary, caption, or legend for a <details> element's disclosure box. Clicking the <summary> element toggles the state of the parent <details> element open and closed.
+Da <data> styles-and-semantics The <data> element links a given piece of content with a machine-readable translation. If the content is time- or date-related, the <time> element must be used.
+Hd <head> meta-info The <head> element contains machine-readable information (metadata) about the document, like its title, scripts, and style sheets.
+Mt <meta> meta-info The <meta> element represents metadata that cannot be represented by other HTML meta-related elements, like <base>, <link>, <script>, <style> or <title>.
+Be <base> meta-info The <base> element specifies the base URL to use for all relative URLs in a document. There can be only one <base> element in a document.
+Spt <script> programming The <script> element is used to embed executable code or data; this is typically used to embed or refer to JavaScript code. The <script> element can also be used with other languages, such as WebGL's GLSL shader programming language and JSON.
+Nst <noscript> programming The <noscript> element defines a section of HTML to be inserted if a script type on the page is unsupported or if scripting is currently turned off in the browser.
+Ed <embed> programming The <embed> element embeds external content at the specified point in the document. This content is provided by an external application or other source of interactive content such as a browser plug-in.
+Ot <object> programming The <object> element represents an external resource, which can be treated as an image, a nested browsing context, or a resource to be handled by a plugin.
+Pm <param> programming The <param> element defines parameters for an <object> element.
