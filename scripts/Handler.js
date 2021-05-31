@@ -40,6 +40,7 @@ export const Handler = {
 
     title.style.fontSize = "5rem";
     tagName.style.fontSize = "3rem";
+
     description.style.fontSize = "1.5rem";
     description.style.width = "75%";
     description.style.textAlign = "center";

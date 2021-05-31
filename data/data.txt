@@ -39,52 +39,52 @@ Tm <time> formatting The <time> element represents a specific period in time. It
 U <u> formatting The Unarticulated Annotation element (<u>) represents a span of inline text which should be rendered in a way that indicates that it has a non-textual annotation. This is rendered by default as a simple solid underline, but may be altered using CSS.
 Vr <var> formatting The Variable element (<var>) represents the name of a variable in a mathematical expression or a programming context. It's typically presented using an italicized version of the current typeface, although that behavior is browser-dependent.
 Wr <wbr> formatting The <wbr> element represents a word break opportunity—a position within text where the browser may optionally break a line, though its line-breaking rules would not otherwise create a break at that location.
-Fm <form> forms-and-input Defines an HTML form for user input
-It <input> forms-and-input Defines an input control
-Ta <textarea> forms-and-input Defines a multi-line input control
-Bn <button> forms-and-input Defines a clickable button
-St <select> forms-and-input Defines a drop-down list
-Op <optgroup> forms-and-input Defines a group of related options in a drop-down list
-On <option> forms-and-input Defines an option in a drop-down list
-Lbl <label> forms-and-input Defines a label for an <input> element
-Fs <fieldset> forms-and-input Groups related elements in a form
-Ld <legend> forms-and-input Defines a caption for a <fieldset> element
-Ds <datalist> forms-and-input Specifies a list of pre-defined options for input controls
-Kn <keygen> forms-and-input Defines a key-pair generator field for forms.
-Ot <output> forms-and-input Defines the result of a calculation
-If <iframe> frames Defines an inline frame.
-Ig <img> images Defines an image
-Mp <map> images Defines a client-side image-map
-Aa <area> images Defines an area inside an image-map
-Cs <canvas> images Used to draw graphics, on the fly, via scripting 
-Fgc <figcaption> images Defines a caption for a <figure> element
-Fg <figure> images Specifies self-contained content
-Pr <picture> images Defines a container for multiple image resources
-Ao <audio> audio-and-video Defines sound content
-Sc <source> audio-and-video Defines multiple media resources for media elements (<video>, <audio>, and <picture>)
-Tk <track> audio-and-video Defines text tracks for media elements (<video>, and <audio>)
-Vd <video> audio-and-video Defines a video or movie
-A <a> links Defines a hyperlink
-Lk <link> links Defines the relationship between a document and an external resource
-Nv <nav> links Defines navigation links
-Ul <ul> lists Defines an unordered list
-Ol <ol> lists Defines an ordered list
-Li <li> lists Defines a list item in a list
-Dl <dl> lists Defines a description list
-Dt <dt> lists Defines a term/name in a description list
-Dd <dd> lists Defines a description of a term/name in a description list
-Mu <menu> lists Defines a list/menu of commands
-Mi <menuitem> lists Defines a command/manu item that the user can invoke from a popup menu
-Tl <table> tables Defines a table
-Cn <caption> tables Defines a table caption
-Th <th> tables Defines a header cell in a table
-Tr <tr> tables Defines a row in a table
-Td <td> tables Defines a cell in a table
-Thd <thead> tables Groups the header content in a table
-Tbd <tbody> tables Groups the body content in a table
-Tf <tfoot> tables Groups the footer content in a table
-Cl <col> tables Specifies column properties for each column within a <colgroup> element
-Cg <colgroup> tables Specifies a group of one or more columns in a table for formatting
+Fm <form> forms-and-input The <form> element represents a document section containing interactive controls for submitting information. It is possible to use the :valid and :invalid CSS pseudo-classes to style a <form> element based on whether or not the elements inside the form are valid.
+It <input> forms-and-input The <input> element is used to create interactive controls for web-based forms in order to accept data from the user; a wide variety of types of input data and control widgets are available, depending on the device and user agent. The <input> element is one of the most powerful and complex in all of HTML due to the sheer number of combinations of input types and attributes.
+Ta <textarea> forms-and-input The <textarea> element represents a multi-line plain-text editing control, useful when you want to allow users to enter a sizeable amount of free-form text, for example a comment on a review or feedback form.
+Bn <button> forms-and-input The <button> element represents a clickable button, used to submit forms or anywhere in a document for accessible, standard button functionality. Easily change the button style with CSS.
+St <select> forms-and-input The <select> element represents a control that provides a menu of options:
+Op <optgroup> forms-and-input The <optgroup> element creates a grouping of options within a <select> element.
+On <option> forms-and-input The <option> element is used to define an item contained in a <select>, an <optgroup>, or a <datalist> element. As such, <option> can represent menu items in popups and other lists of items in an HTML document.
+Lbl <label> forms-and-input The <label> element represents a caption for an item in a user interface. To associate the <label> with an <input> element, you need to give the <input> an id attribute. The <label> then needs a for attribute whose value is the same as the input's id. Alternatively, you can nest the <input> directly inside the <label>, in which case the for and id attributes are not needed.
+Fs <fieldset> forms-and-input The <fieldset> element is used to group several controls as well as labels (<label>) within a web form.
+Ld <legend> forms-and-input The <legend> element represents a caption for the content of its parent <fieldset>.
+Ds <datalist> forms-and-input The <datalist> element contains a set of <option> elements that represent the permissible or recommended options available to choose from within other controls.
+Kn <keygen> forms-and-input The HTML <keygen> element exists to facilitate generation of key material, and submission of the public key as part of an HTML form. This mechanism is designed for use with Web-based certificate management systems. This element is deprecated although some browsers may still support it.
+Ot <output> forms-and-input The HTML Output element (<output>) is a container element into which a site or app can inject the results of a calculation or the outcome of a user action.
+If <iframe> frames The Inline Frame element (<iframe>) represents a nested browsing context, embedding another HTML page into the current one.
+Ig <img> images The <img> element embeds an image into the document.
+Mp <map> images The <map> element is used with <area> elements to define an image map (a clickable link area).
+Aa <area> images The <area> element defines an area inside an image map that has predefined clickable areas. An image map allows geometric areas on an image to be associated with hypertext link. This element is used only within a <map> element.
+Cs <canvas> images Use the <canvas> element with either the canvas scripting API or the WebGL API to draw graphics and animations.
+Fgc <figcaption> images The <figcaption> or Figure Caption element represents a caption or legend describing the rest of the contents of its parent <figure> element.
+Fg <figure> images The <figure> (Figure With Optional Caption) element represents self-contained content, potentially with an optional caption, which is specified using the <figcaption> element. The figure, its caption, and its contents are referenced as a single unit.
+Pr <picture> images The <picture> element contains zero or more <source> elements and one <img> element to offer alternative versions of an image for different display/device scenarios.
+Ao <audio> audio-and-video The <audio> element is used to embed sound content in documents. It may contain one or more audio sources, represented using the src attribute or the <source> element: the browser will choose the most suitable one.
+Sc <source> audio-and-video The <source> element specifies multiple media resources for the <picture>, <audio> , or <video> element. This element has no content and does not have a closing tag. It is commonly used to offer the same media content in multiple file formats in order to provide compatibility with a broad range of browsers given their differing support for image and media file formats.
+Tk <track> audio-and-video The <track> element is used as a child of the media elements, <audio> and <video>. It lets you specify timed text tracks (or time-based data), for example to automatically handle subtitles. The tracks are formatted in WebVTT format (.vtt files) — Web Video Text Tracks.
+Vd <video> audio-and-video The Video element (<video>) embeds a media player which supports video playback into the document. You can use <video> for audio content as well, but the <audio> element may provide a more appropriate user experience.
+A <a> links The <a> element (or anchor tag), with its href attribute, creates a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address. Content within each <a> should indicate the link's destination. If the href attribute is present, pressing the enter key while focused on the <a> element will activate it.
+Lk <link> links The External Resource Link element (<link>) specifies relationships between the current document and an external resource. This element is most commonly used to link to stylesheets, but is also used to establish site icons (both "favicon" style icons and icons for the home screen and apps on mobile devices) among other things.
+Nv <nav> links The <nav> element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.
+Ul <ul> lists The <ul> element represents an unordered list of items, typically rendered as a bulleted list.
+Ol <ol> lists The <ol> element represents an ordered list of items — typically rendered as a numbered list.
+Li <li> lists The <li> element is used to represent an item in a list. It must be contained in a parent element: an ordered list (<ol>), an unordered list (<ul>), or a menu (<menu>).
+Dl <dl> lists The <dl> element represents a description list. The element encloses a list of groups of terms (specified using the <dt> element) and descriptions (provided by <dd> elements). Common uses for this element are to implement a glossary or to display metadata (a list of key-value pairs).
+Dt <dt> lists The <dt> element specifies a term in a description or definition list, and as such must be used inside a <dl> element. It is usually followed by a <dd> element; however, multiple <dt> elements in a row indicate several terms that are all defined by the immediate next <dd> element.
+Dd <dd> lists The <dd> element provides the description, definition, or value for the preceding term (<dt>) in a description list (<dl>).
+Mu <menu> lists The <menu> element represents a group of commands that a user can perform or activate. This includes both list menus, which might appear across the top of a screen, as well as context menus, such as those that might appear underneath a button after it has been clicked.
+Mi <menuitem> lists The <menuitem> element represents a command that a user is able to invoke through a popup menu. This includes context menus, as well as menus that might be attached to a menu button. This element is deprecated although some browsers may still support it.
+Tl <table> tables The <table> element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data.
+Cn <caption> tables The <caption> element specifies the caption (or title) of a table.
+Th <th> tables The <th> element defines a cell as header of a group of table cells. The exact nature of this group is defined by the scope and headers attributes.
+Tr <tr> tables The <tr> element defines a row of cells in a table. The row's cells can then be established using a mix of <td> (data cell) and <th> (header cell) elements.
+Td <td> tables The <td> element defines a cell of a table that contains data. It participates in the table model.
+Thd <thead> tables The <thead> element defines a set of rows defining the head of the columns of the table.
+Tbd <tbody> tables The Table Body element (<tbody>) encapsulates a set of table rows (<tr> elements), indicating that they comprise the body of the table (<table>).
+Tf <tfoot> tables The <tfoot> element defines a set of rows summarizing the columns of the table.
+Cl <col> tables The <col> element defines a column within a table and is used for defining common semantics on all common cells. It is generally found within a <colgroup> element.
+Cg <colgroup> tables The <colgroup> element defines a group of columns within a table.
 Sl <style> styles-and-semantics Defines style information for a document
 Dv <div> styles-and-semantics Defines a section in a document
 Spn <span> styles-and-semantics Defines a section in a document
