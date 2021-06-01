@@ -58,7 +58,6 @@ export const Handler = {
       deleteBtn.style.height = "25px";
       deleteBtn.style.width = "25px";
     });
-
     deleteBtn.addEventListener("click", () => {
       table.style.opacity = 1;
       newElement.remove();
